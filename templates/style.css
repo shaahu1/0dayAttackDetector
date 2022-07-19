@@ -1,0 +1,71 @@
+.header
+{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    background-color: #ccc;
+    padding-top: 10px;
+}
+
+.siteTital
+{
+    text-align: center;
+}
+
+.formContainer
+{
+    width: 70%;
+    margin-top: 100px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    justify-content: center;
+
+    background-color: #eee;
+}
+
+.txtbox
+{
+    width: 40%;
+    height: 25px;
+    margin-top: 5px;
+    
+    margin: auto;
+    display: block;
+
+}
+
+#checkBtn
+{
+    width: 50%;
+    height: 50px;
+    background-color: #0b6bb9;
+    color: wheat;
+    border-radius: 5px;
+
+    font-size: large;
+
+    margin: auto;
+    display: block;
+}
+
+.resultContainer
+{
+    width: 50%;
+    margin: auto;
+    height: 100px;
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    background-color: #eee;
+    margin-bottom: 100px;
+}
+
+.predictDisplay
+{
+    margin: auto;
+}

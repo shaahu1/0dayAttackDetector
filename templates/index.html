@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+	
+</head>
+
+<body>
+
+	<div class="header">
+		<h1 class="siteTital">Zero day attack ditector</h1>
+	</div>
+	<p></p>
+
+	<div class="formContainer">
+
+		<form action="/predict" method="post" class="col s12">
+		
+			<input class="txtbox" type="text" name="Average Packet Size" placeholder="Average Packet Size" /> <br />
+			<input class="txtbox" type="text" name="Flow Bytes/s" placeholder="Flow Bytes/s" /> <br />
+			<input class="txtbox" type="text" name="Max Packet Length" placeholder="Max Packet Length" /> <br />
+			<input class="txtbox" type="text" name="Fwd Packet Length Mean" placeholder="Fwd Packet Length Mean" /> <br />
+			<input class="txtbox" type="text" name="Fwd IAT Min" placeholder="Fwd IAT Min" /> <br />
+			<input class="txtbox" type="text" name="Total Length of Fwd Packets" placeholder="Total Length of Fwd Packets" /> <br />
+			<input class="txtbox" type="text" name="Fwd IAT Std" placeholder="Fwd IAT Std" /> <br />
+			<input class="txtbox" type="text" name="Flow IAT Mean" placeholder="Flow IAT Mean" /> <br />
+			<input class="txtbox" type="text" name="Fwd Packet Length Max" placeholder="Fwd Packet Length Max" /> <br />
+			<input class="txtbox" type="text" name="Fwd Header Length" placeholder="Fwd Header Length" /> <br />
+			<br />
+		
+			<button id="checkBtn"> Check </button>
+		</form>
+
+	</div>
+	
+
+	<div class="resultContainer">
+		<Span id="predictDisplay"> {{result}} </Span>
+	</div>
+	
+
+</body>
+
+</html>
